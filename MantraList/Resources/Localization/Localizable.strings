@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MantraList
+
+  Created by Evgeniy Goncharov on 03.02.2024.
+  
+*/
+
+"mainView.title" = "Открыть список мантр";
+"playlistView.title" = "Список мантр";
+"playlistView.mixButton" = "Перемешать";

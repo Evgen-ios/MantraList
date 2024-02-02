@@ -20,13 +20,13 @@ final class TableViewMantraCell: UITableViewCell {
     }
     
     private var name = UILabel().apply {
-        $0.font = UIFont(name: "Peachi", size: 15)
+        $0.font = UIFont(name: Fonts.peachi, size: 15)
         $0.textAlignment = .left
         $0.textColor = AppColors.white
     }
     
     private var duration = UILabel().apply {
-        $0.font = UIFont(name: "Nunito", size: 12)
+        $0.font = UIFont(name: Fonts.nunito, size: 12)
         $0.textAlignment = .right
         $0.textColor = AppColors.white.withAlphaComponent(0.4)
     }

@@ -14,4 +14,3 @@ extension NSObjectProtocol {
         return self
     }
 }
-

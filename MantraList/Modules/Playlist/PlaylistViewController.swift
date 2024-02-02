@@ -10,7 +10,6 @@ import SnapKit
 
 class PlaylistViewController: UIViewController {
     
-    
     // MARK: - Private Properties
     private lazy var items = getMantra()
     

@@ -107,7 +107,7 @@ class PlaylistViewController: UIViewController {
         
         UIView.transition(with: tableView,
                           duration: 0.35,
-                          options: .transitionFlipFromTop,
+                          options: .transitionFlipFromRight,
                           animations: {
             self.tableView.reloadData()
         })

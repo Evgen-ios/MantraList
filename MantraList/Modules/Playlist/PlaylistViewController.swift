@@ -49,6 +49,7 @@ class PlaylistViewController: UIViewController {
         $0.dataSource = self
         $0.delegate = self
         $0.rowHeight = 70
+        $0.separatorStyle = .none
         $0.registerCell(TableViewMantraCell.self)
     }
     

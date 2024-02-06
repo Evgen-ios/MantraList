@@ -11,6 +11,6 @@ class BaseCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     
     func start() {
-        fatalError("Sholdbe empliment coordinator")
+        fatalError("BaseCoordinator Error")
     }
 }

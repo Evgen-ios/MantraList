@@ -17,6 +17,11 @@
 		7A1BD7112B6D597E00066D66 /* Int + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1BD7102B6D597E00066D66 /* Int + Ext.swift */; };
 		7A1BD7132B6D6B0400066D66 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A1BD7122B6D6B0400066D66 /* Localizable.strings */; };
 		7A1BD7152B6D6B8B00066D66 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1BD7142B6D6B8A00066D66 /* Localizable.swift */; };
+		7A47DEB62B72318F00C254B4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A47DEB52B72318F00C254B4 /* Coordinator.swift */; };
+		7A47DEB82B7232AB00C254B4 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A47DEB72B7232AB00C254B4 /* BaseCoordinator.swift */; };
+		7A47DEBA2B7233AE00C254B4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A47DEB92B7233AE00C254B4 /* AppCoordinator.swift */; };
+		7A47DEBC2B7234EB00C254B4 /* MainViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A47DEBB2B7234EB00C254B4 /* MainViewControllerCoordinator.swift */; };
+		7A47DEBE2B72387600C254B4 /* PlaylistViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A47DEBD2B72387600C254B4 /* PlaylistViewControllerCoordinator.swift */; };
 		7AC38F7F2B6CE87000A866AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC38F7E2B6CE87000A866AF /* AppDelegate.swift */; };
 		7AC38F832B6CE87000A866AF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC38F822B6CE87000A866AF /* MainViewController.swift */; };
 		7AC38F882B6CE88500A866AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC38F872B6CE88500A866AF /* Assets.xcassets */; };
@@ -36,6 +41,11 @@
 		7A1BD7102B6D597E00066D66 /* Int + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int + Ext.swift"; sourceTree = "<group>"; };
 		7A1BD7122B6D6B0400066D66 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		7A1BD7142B6D6B8A00066D66 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		7A47DEB52B72318F00C254B4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7A47DEB72B7232AB00C254B4 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		7A47DEB92B7233AE00C254B4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7A47DEBB2B7234EB00C254B4 /* MainViewControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerCoordinator.swift; sourceTree = "<group>"; };
+		7A47DEBD2B72387600C254B4 /* PlaylistViewControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewControllerCoordinator.swift; sourceTree = "<group>"; };
 		7AC38F7B2B6CE87000A866AF /* MantraList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MantraList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC38F7E2B6CE87000A866AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AC38F822B6CE87000A866AF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +101,16 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		7A47DEB42B72316A00C254B4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				7A47DEB92B7233AE00C254B4 /* AppCoordinator.swift */,
+				7A47DEB72B7232AB00C254B4 /* BaseCoordinator.swift */,
+				7A47DEB52B72318F00C254B4 /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		7AC38F722B6CE87000A866AF = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				7AC38F972B6CEA3900A866AF /* AppDelegate */,
+				7A47DEB42B72316A00C254B4 /* Coordinators */,
 				7AC38F9D2B6CF5C200A866AF /* Extensions */,
 				7AC38F9A2B6CEBD400A866AF /* Modules */,
 				7AC38F922B6CE8F900A866AF /* Resources */,
@@ -160,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				7AC38F822B6CE87000A866AF /* MainViewController.swift */,
+				7A47DEBB2B7234EB00C254B4 /* MainViewControllerCoordinator.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -169,6 +191,7 @@
 			children = (
 				7A1BD7092B6D327500066D66 /* MantraModel.swift */,
 				7A1BD7012B6D0E0F00066D66 /* PlaylistViewController.swift */,
+				7A47DEBD2B72387600C254B4 /* PlaylistViewControllerCoordinator.swift */,
 				7A1BD70B2B6D3DBC00066D66 /* Views */,
 			);
 			path = Playlist;
@@ -265,13 +288,18 @@
 			files = (
 				7AC38F832B6CE87000A866AF /* MainViewController.swift in Sources */,
 				7A1BD70D2B6D3DCE00066D66 /* TableViewMantraCell.swift in Sources */,
+				7A47DEBA2B7233AE00C254B4 /* AppCoordinator.swift in Sources */,
 				7A1BD7152B6D6B8B00066D66 /* Localizable.swift in Sources */,
 				7A1BD7022B6D0E0F00066D66 /* PlaylistViewController.swift in Sources */,
 				7A1BD70A2B6D327500066D66 /* MantraModel.swift in Sources */,
 				7AC38F992B6CEA5400A866AF /* AppTheme.swift in Sources */,
+				7A47DEB62B72318F00C254B4 /* Coordinator.swift in Sources */,
+				7A47DEB82B7232AB00C254B4 /* BaseCoordinator.swift in Sources */,
 				7AC38F7F2B6CE87000A866AF /* AppDelegate.swift in Sources */,
 				7A1BD7112B6D597E00066D66 /* Int + Ext.swift in Sources */,
 				7AC38F9F2B6CF60400A866AF /* NSObject + Ext.swift in Sources */,
+				7A47DEBE2B72387600C254B4 /* PlaylistViewControllerCoordinator.swift in Sources */,
+				7A47DEBC2B7234EB00C254B4 /* MainViewControllerCoordinator.swift in Sources */,
 				7A1BD70F2B6D3FDF00066D66 /* UITableView + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

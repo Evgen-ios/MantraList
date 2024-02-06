@@ -10,6 +10,8 @@ import SnapKit
 
 class MainViewController: UIViewController {
     
+    weak var mainViewControllerCoordinator: MainViewControllerCoordinator?
+    
     // MARK: - Private Properties
     private lazy var button = UIButton().apply {
         $0.titleLabel?.font =  UIFont(name: Fonts.nunito, size: 16)
@@ -45,16 +47,9 @@ class MainViewController: UIViewController {
     }
     
     @objc func pressed() {
-        let viewControllerToPresent = PlaylistViewController()
-        if let sheet = viewControllerToPresent.sheetPresentationController {
-            sheet.preferredCornerRadius = 26
-            sheet.prefersGrabberVisible = true
-            sheet.largestUndimmedDetentIdentifier = .medium
-            sheet.prefersScrollingExpandsWhenScrolledToEdge = true
-            sheet.prefersEdgeAttachedInCompactHeight = true
-            sheet.widthFollowsPreferredContentSizeWhenEdgeAttached = true
-        }
-        present(viewControllerToPresent, animated: true, completion: nil)
+        let playlistViewControllerCoordinator = PlaylistViewControllerCoordinator(navigtionController: self.navigationController ?? UINavigationController())
+        mainViewControllerCoordinator?.add(coordinator: playlistViewControllerCoordinator)
+        playlistViewControllerCoordinator.start()
     }
 }
 

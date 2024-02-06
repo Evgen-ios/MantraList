@@ -11,6 +11,8 @@ import SnapKit
 class PlaylistViewController: UIViewController {
     
     // MARK: - Private Properties
+    weak var playlistViewControllerCoordinator: PlaylistViewControllerCoordinator?
+    
     private lazy var items = getMantra()
     
     private var header = UILabel().apply {

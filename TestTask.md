@@ -8,7 +8,7 @@
 
 1. Файл в формате plist со списком мантр:
     
-    [Mantras.plist](https://prod-files-secure.s3.us-west-2.amazonaws.com/196ab57a-2062-40c3-8d4e-01c94b6c377d/94afddee-10ab-40c6-8979-c40c1075ace1/Mantras.plist)
+    [Mantras.plist](https://github.com/Evgen-ios/MantraList/blob/main/MantraList/Resources/Data/Mantras.plist)
     
 
 Описание полей:

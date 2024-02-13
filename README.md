@@ -1,7 +1,5 @@
 # Mantra List from Navamsha
 
-
-  
 ### Dependencies
 * [SnapKit](https://github.com/SnapKit/SnapKit)
 
